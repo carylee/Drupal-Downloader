@@ -10,15 +10,21 @@ else
   DRUSH=$PWD"/drush/drush"
 fi
 
+script_dir=`dirname "$0"`
 $DRUSH dl drupal
 
 DRUPAL=$(ls | grep -i drupal)
 
+if [ -f $script_dir/modules.txt ]
+then
+  MODULES=$( cat $script_dir/modules.txt )
+else
+  MODULES=$( curl http://condo.mine.nu/~Cary/urls.txt )
+fi
+
 cd $DRUPAL/modules
 
-MODULES=$( curl http://condo.mine.nu/~Cary/urls.txt )
-
-#$DRUSH dl $MODULES
+$DRUSH dl $MODULES
 #$DRUSH enable $MODULES 
 
 #This line is optional - it just removes the drush install when done
