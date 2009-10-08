@@ -1,5 +1,15 @@
-This script automates some tasks with Drush (http://drupal.org/project/drush)
+==DESCRIPTION
+Run this script to download Drupal (http://drupal.org) along with a list of modules
+This script uses Drush for many of its tasks (http://drupal.org/project/drush)
 
---To use--
+
+==INSTRUCTIONS
 At the command line, navigate to the directory where you would like to install Drupal
 Run this script in that directory
+
+If you have Drush installed, the script will detect and use it.
+If you don't, it will download it and delete it when it is done.
+
+If you already have a folder with "drupal" in the name in a the directory you run the script in,
+drupal_downloader.sh will assume that is a drupal installation and will install the modules
+in it without downloading the Drupal code again.
