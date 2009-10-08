@@ -1,0 +1,5 @@
+This script automates some tasks with Drush (http://drupal.org/project/drush)
+
+--To use--
+At the command line, navigate to the directory where you would like to install Drupal
+Run this script in that directory
