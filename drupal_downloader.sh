@@ -44,3 +44,5 @@ if which drush >/dev/null; then
 else
   rm -R $TOP/drush
 fi
+
+echo "Done!"
