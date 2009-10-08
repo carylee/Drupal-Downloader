@@ -11,9 +11,13 @@ else
 fi
 
 script_dir=`dirname "$0"`
-$DRUSH dl drupal
 
 DRUPAL=$(ls | grep -i drupal)
+if [ ! $DRUPAL ]
+then 
+  $DRUSH dl drupal
+  DRUPAL=$(ls | grep -i drupal)
+fi
 
 if [ -f $script_dir/modules.txt ]
 then
