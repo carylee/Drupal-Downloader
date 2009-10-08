@@ -3,13 +3,6 @@ filefield
 imagefield
 link
 date
-cck_field_privacy
-cck_import
-cck_nodemenu
-cck_redirection
-wysiwygcck
-nodereferrer
-relevant_content
 image
 imageapi
 imagecache
