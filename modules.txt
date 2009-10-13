@@ -11,9 +11,12 @@ image_fupload
 token
 imagefield_tokens
 pathauto
+flashnode 
+swftools
 views
 editview
 views_slideshow
+views_natural_sort
 slider
 panels
 ctools
@@ -23,9 +26,11 @@ custom_breadcrumbs
 jammer
 wysiwyg
 admin_menu
+adminrole
 google_analytics
 xmlsitemap
 google_cse
+realname
 fb
 ldap_integration
 pubcookie
