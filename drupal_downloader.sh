@@ -29,7 +29,8 @@ then
   MODULES=$( cat $script_dir/modules.txt )
 else
   echo "No local module list found... fetching a remote one"
-  MODULES=$( curl http://condo.mine.nu/~Cary/modules.txt )
+  MODULES=$( curl "http://spreadsheets.google.com/pub?key=tVOu11ogUPzNPRtNJjOwHtQ&single=true&gid=0&output=txt" )
+  #MODULES=$( curl http://condo.mine.nu/~Cary/modules.txt )
 fi
 
 cd $DRUPAL/modules
